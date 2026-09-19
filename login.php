@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Google Fonts Import */
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Montserrat:wght@300;400;500&display=swap');
+
+/* Reset & Body Background */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #EAEAEA;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, rgba(18, 18, 18, 1) 70%);
+}
+
+/* Targets your raw <form> directly as the container card */
+form {
+    background: #1A1A1A;
+    border: 1px solid #2B2B2B;
+    padding: 50px 40px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+/* Gold Accent Line at the top of the form */
+form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: #D4AF37; /* Champagne Gold */
+}
+
+/* Targets your raw <label> tags */
+label {
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    color: #888888;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+/* Targets your raw <input> fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #333333;
+    padding: 10px 0;
+    color: #FFFFFF;
+    font-size: 0.95rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-bottom-color: #D4AF37;
+}
+
+/* Targets your raw <button> */
+button {
+    width: 100%;
+    background-color: transparent;
+    color: #D4AF37;
+    border: 1px solid #D4AF37;
+    padding: 14px;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #D4AF37;
+    color: #121212;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+    </style>
+</head>
+<body>
+    
+        <form action="check_login.php" method="post">
+
+        <label for="">ชื่อผู้ใช้</label>
+        <input type="text" name="username"> <br>
+
+        <label for="">รหัสผ่าน</label>
+        <input type="text" name="password"> <br>
+
+        <button>ล็อคอิน</button>
+        
+        </form>
+
+</body>
+</html>
